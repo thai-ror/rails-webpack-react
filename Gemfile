@@ -1,0 +1,44 @@
+source 'https://rubygems.org'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+ruby '2.6.8'
+
+gem 'rails', '~> 6.1', '>= 6.1.4.1'
+gem 'sass-rails', '~> 6.0'
+gem 'uglifier', '~> 4.2'
+gem 'coffee-rails', '~> 5.0'
+gem 'turbolinks', '~> 5.2', '>= 5.2.1'
+gem 'jbuilder', '~> 2.11', '>= 2.11.2'
+gem 'bootsnap', '~> 1.9', '>= 1.9.1', require: false
+
+gem 'mysql2', '~> 0.5.3'
+# gem 'webpacker', '~> 6.0.0.rc.5'
+gem 'webpacker', '~> 5.4', '>= 5.4.3'
+gem 'react-rails', '~> 2.6', '>= 2.6.1'
+
+gem 'devise', '~> 4.8'
+gem 'dotenv', '~> 2.7', '>= 2.7.6'
+gem 'i18n', '~> 1.8', '>= 1.8.10'
+gem 'puma', '~> 5.5'
+
+group :development, :staging do
+  gem 'letter_opener_web', '~> 1.4'
+end
+
+group :development, :test do
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'awesome_print', '~> 1.9', '>= 1.9.2'
+end
+
+group :development do
+  gem 'web-console', '~> 4.1'
+  gem 'listen', '~> 3.7'
+  gem 'spring'
+  gem 'spring-watcher-listen'
+end
+
+group :test do
+  gem 'capybara', '~> 3.35', '>= 3.35.3'
+end
+
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
