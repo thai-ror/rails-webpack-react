@@ -12,7 +12,7 @@ docker-compose build
 docker-compose up
 ```
 
-![alt text](src/assets/dahboard.jpg)
+![alt text](public/demo.jpg)
 
 Project infomation:
 
